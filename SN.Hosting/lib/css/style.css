@@ -1,0 +1,9 @@
+body {
+	background: rgb(0,212,255);
+	background: radial-gradient(circle, rgba(0,212,255,1) 35%, rgba(9,9,121,1) 100%);
+}
+
+.formPage {
+	padding: 10vw;
+	margin: 5vw;
+}
