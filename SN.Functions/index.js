@@ -26,7 +26,7 @@ exports.newConfig = functions.region("europe-west1").https.onRequest((req, res) 
 			"name": req.body.name,
 			"active": true,
 			"nextCheck": Timestamp.fromDate(new Date(Date.now())),
-			"waitingForResponse": true,
+			"waitingForResponse": false,
 		};
 		db.collection("alerts").add(data).then(() => {
 			res.status(200);
